@@ -33,7 +33,7 @@ app = FastAPI(
 
 app.include_router(usuario_router)
 app.include_router(reserva_router)
-
+app.include_router(database_router)
 
 @app.get(
     "/",
