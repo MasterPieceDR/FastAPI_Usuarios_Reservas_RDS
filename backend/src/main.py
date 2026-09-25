@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from database.database import create_db_and_tables
-
+from routers.database_router import router as database_router
 from routers.usuario_router import router as usuario_router
 from routers.reserva_router import router as reserva_router
 
